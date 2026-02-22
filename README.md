@@ -27,7 +27,7 @@ when to consume energy.
 ```mermaid
 graph TD
     A[ENTSO-E API] --> B[Airflow - Orchestration]
-    B --> C[TimescaleDB - Storage]
+    B --> C[PostgreSQL - Storage]
     C --> D[dbt - Transformation]
     D --> E[XGBoost + SHAP - Model]
     E --> F[FastAPI - Model Serving]
@@ -38,7 +38,7 @@ graph TD
 LAYER : TECHNOLOGY
 
 - Orchestration : Apache Airflow 
-- Storage : TimescaleDB (PostgreSQL) 
+- Storage : PostgreSQL
 - Transformation : dbt 
 - ML Model : XGBoost + SHAP 
 - API : FastAPI 
