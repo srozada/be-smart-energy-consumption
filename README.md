@@ -46,6 +46,56 @@ LAYER : TECHNOLOGY
 - Infrastructure : Docker Compose 
 - Data Source : ENTSO-E Transparency Platform 
 
+## Project Structure
+```
+be-smart-energy-consumption/
+│
+├── docker/
+│   ├── airflow/
+│   │   └── Dockerfile
+│   ├── fastapi/
+│   │   └── Dockerfile
+│   └── streamlit/
+│       └── Dockerfile
+│
+├── dags/
+│   └── energy_pipeline.py
+│
+├── ingestion/
+│   ├── __init__.py
+│   └── entsoe_client.py
+│
+├── dbt/
+│   ├── models/
+│   │   ├── staging/
+│   │   ├── intermediate/
+│   │   └── mart/
+│   ├── tests/
+│   └── dbt_project.yml
+│
+├── api/
+│   ├── main.py
+│   ├── routers/
+│   │   ├── forecast.py
+│   │   ├── recommendation.py
+│   │   └── explanation.py
+│   └── schemas/
+│       └── response.py
+│
+├── ml/
+│   ├── train.py
+│   ├── predict.py
+│   └── explainer.py
+│
+├── dashboard/
+│   └── app.py
+│
+├── docker-compose.yml
+├── .env
+├── requirements.txt
+└── README.md
+```
+
 ## Getting Started
 ```bash
 git clone https://github.com/srozada/be-smart-energy-consumption.git
