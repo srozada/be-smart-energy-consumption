@@ -38,13 +38,13 @@ graph TD
 LAYER : TECHNOLOGY
 
 - Orchestration : Apache Airflow 
-- Storage : TimescaleDB (PostgreSQL) |
-- Transformation : dbt |
-- ML Model : XGBoost + SHAP |
-- API : FastAPI |
-- Dashboard : Streamlit |
-- Infrastructure : Docker Compose |
-- Data Source : ENTSO-E Transparency Platform |
+- Storage : TimescaleDB (PostgreSQL) 
+- Transformation : dbt 
+- ML Model : XGBoost + SHAP 
+- API : FastAPI 
+- Dashboard : Streamlit 
+- Infrastructure : Docker Compose 
+- Data Source : ENTSO-E Transparency Platform 
 
 ## Getting Started
 ```bash
