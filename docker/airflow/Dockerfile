@@ -8,10 +8,10 @@ RUN apt-get update && apt-get install -y \
 
 USER airflow
 
-COPY requirements.txt .
-
-RUN pip install --no-cache-dir \
+RUN pip install --no-cache-dir --upgrade \
     entsoe-py \
     psycopg2-binary \
     pandas \
-    sqlalchemy
+    SQLAlchemy==1.4.46
+
+

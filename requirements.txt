@@ -1,0 +1,4 @@
+entsoe-py
+psycopg2-binary
+pandas==1.5.3
+SQLAlchemy==1.4.46

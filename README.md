@@ -117,7 +117,7 @@ In active development
 
 ## Roadmap
 - [x] Project structure
-- [ ] Data ingestion pipeline
+- [x] Data ingestion pipeline
 - [ ] dbt transformation models
 - [ ] XGBoost forecasting model
 - [ ] SHAP explainability layer
